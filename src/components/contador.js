@@ -1,21 +1,14 @@
 import React, {Fragment} from 'react';
+import '../css/contador.css';
 
 
 
-const Contador =({increment, decrement,  onClickFunction})=> {
-  const suma = () =>{
-    onClickFunction(increment)
-  }
-  const resta = () =>{
-    onClickFunction(decrement)
-  }
-   
+const Contador = ({onClick, label}) => {
   return (
-    <Fragment>
-      
-      <button onClick={suma}>+{increment}</button>
-      
-      <button onClick={resta}>-{decrement}</button>
+    <Fragment> 
+      <div className='container_button'>
+      <button className='button' onClick={onClick}>{label}</button>
+      </div>
       
     </Fragment>
   )

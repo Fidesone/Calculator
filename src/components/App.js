@@ -1,26 +1,27 @@
 import React from 'react';
-import ReactDOM  from 'react';
+//import ReactDOM  from 'react';
 import Contador from '../components/contador';
-import Prueba from '../components/prueba';
+import AutoContador from '../components/AutoContador';
 const {useState}=React;
 
-const App = () => {
+const App = (props) => {
+    const [contador_value, update_contador]= useState(5);
+    setInterval(() =>{
+        update_contador(contador_value + 1);
+    },2000);
     
-    const [count, setCount]=useState(10)
+     const [count, setCount]=useState(10)
 
-    const incrementCount=increment=>{
-        setCount(count + increment)
-    }
-    const decrementCount= decrement=>{
-        setCount(count - decrement)
-    }
+    
     return (
         <div>
-            <Contador increment= {1} onClickFunction={incrementCount} />
-            <Contador decrement= {1} onClickFunction={decrementCount}/>
-            <span> Contador: {count}</span>
+            <h2>Contador manual</h2>
+            <Contador onClick={() => setCount(value => value + 1)} label={"+1"} />
+            <Contador onClick={() => setCount(value => value - 1)} label={"-1"} />
+            <span> Contador: {count}</span> 
+            <AutoContador/>
+                
             
-            <Prueba></Prueba>
 
         </div>
 
