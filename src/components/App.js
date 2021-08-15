@@ -16,10 +16,13 @@ const App = (props) => {
     return (
         <div>
             <h2>Contador manual</h2>
+            
             <Contador onClick={() => setCount(value => value + 1)} label={"+1"} />
             <Contador onClick={() => setCount(value => value - 1)} label={"-1"} />
+            <Contador onClick={() => setCount(value => value = 0)} label={"Reset"} />
+            
             <span> Contador: {count}</span> 
-            <AutoContador/>
+            {/* <AutoContador/> */}
                 
             
 
