@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAEI,iBAFa,CAEb,OAAO,CAAC;EAEJ,gBAAgB,EAAE,WAAW;EAC7B,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;CAClB",
+    "mappings": "AAAA,AAEI,iBAFa,CAEb,OAAO,CAAC;EAEJ,gBAAgB,EAAE,WAAW;EAC7B,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;CAElB",
     "sources": [
         "contador.scss"
     ],

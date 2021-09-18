@@ -1,0 +1,26 @@
+.container{
+    background-color: grey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container_calculator{
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        background-color: hotpink;
+        width: 35%;
+        height: 75%;
+        border-radius: 50px;
+    .container_screen{
+        margin-top: 30px;
+        background-color: greenyellow ;
+        border-radius: 25px;
+        width: 90%;
+        height: 20%;
+        border: 1px solid black;
+
+    }
+
+    }
+}
