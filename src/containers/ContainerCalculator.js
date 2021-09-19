@@ -1,12 +1,14 @@
 import React from 'react';
 import ContainerScreen from '../containers/ContainerScreen'
-//import Pantalla
+import ContainerButtons from '../containers/ContainerButtons'
+
+
+
 const ContainerCalculator=()=>{
     return(
         <div className= "container_calculator">
-            
-            {/*<h1>Container calculator</h1>*/}
             <ContainerScreen/>
+            <ContainerButtons/>
         </div>
     )
 }
