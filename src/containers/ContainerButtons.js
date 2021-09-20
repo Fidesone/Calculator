@@ -1,10 +1,22 @@
 import React from 'react';
+import ButtonCounter from '../components/buttonCounter';
+import ButtonNumber from '../components/buttonNumber';
 
 
 const ContainerButtons=()=>{
     return(
         <div className= "container_buttons">
-            <h1>hello</h1>
+          <ButtonCounter/>
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+          <ButtonNumber/>  
+         
             
         </div>
     )
